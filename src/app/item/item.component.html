@@ -1,0 +1,18 @@
+<app-logo></app-logo>
+<app-hero></app-hero>
+<div class="row details">
+  <div class="col-md-6">
+    <h2 style="text-align: center;">Qoutes</h2>
+    <ul>
+      <li *ngFor="let quote of quotes; let i = index">
+        <h4 style="padding-top:2rem">"{{quote.quote}}"</h4><br>
+        <button (click)="toggleDetails(i) " class="btn btn-warning">Details</button>
+        <app-quote-detail *ngIf="quote.showDetails" [quote]="quote" (delete)=deleteGoal(i)></app-quote-detail>
+      </li><br><br>
+    </ul>
+
+  </div>
+  <div class="col-md-6">
+    <app-form (add)="addNewGoal($event)"></app-form>
+  </div>
+</div>

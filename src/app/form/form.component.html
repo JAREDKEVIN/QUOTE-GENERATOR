@@ -1,70 +1,45 @@
-<div class="position-absolute top-0 start-0 end-0 bottom-0 lift">
-  <div data-mdb-toggle="animation" animation fadeInDown class="p-2 m-2 formDiv">
-    <div class="container">
-      <div class="d-flex justify-content-end">
-        <button type="button" id="form" aria-label="form" (click)="close(false)" class="btn btn-outline-danger mt-2">
-          <i class="fa fa-times" aria-hidden="true"></i>
-        </button>
-      </div>
-      <form class="form" (ngSubmit)="submitQuote(form,form.value)" #form="ngForm">
-        <div class="mb-3">
-          <label for="exampleFormControlInput1" class="form-label text-light">Name</label
-          >
-                    <input
-            type="text"
-            class="form-control"
-            id="exampleFormControlInput1"
-            ngModel
-            name="userName"
-            #name="ngModel"
-            placeholder="Your Name....."
-            required
-          />
-          <div [hidden]="name.valid||name.pristine" ngClass="text-danger">
-            Name is required.
-          </div>
-        </div>
-        <div class="mb-3">
-          <label for="exampleFormControlTextarea1" class="form-label text-light"
-            >Author</label
-          >
-          <input 
-            type="text"
-            class="form-control"
-            id="exampleFormControlInput1"
-            ngModel
-            name="author"
-            #author="ngModel"
-            placeholder="Author's name...."
-            required
-          />
-          <div [hidden]="author.valid||author.pristine" ngClass="text-danger">
-            authors name is required.
-          </div>
-        </div>
-        <div class="mb-3">
-          <label for="exampleFormControlTextarea1" class="form-label text-light"
-            >Qoute</label
-          >
-          <textarea
-            class="form-control"
-            id="exampleFormControlTextarea1"
-            rows="3"
-            ngModel
-            #quote="ngModel"
-            name="qoute"
-            placeholder="Your Qoute.."
-            required
-          ></textarea>
-          <div [hidden]="quote.valid||quote.pristine" ngClass="text-danger">
-            Quote is required.
-          </div>
-        </div>
+<h2>Add your quote below</h2>
 
-        <div class="example-button">
-          <button type="button" class="btn btn-warning">Add Quote</button>
+<div class="row pos">
+  <div class="col-lg-12">
+    <form (ngSubmit)="submitQuote();quoteForm.resetForm({})" #quoteForm="ngForm">
+      <div class="form-control">
+        <label for="quote">Quote</label>
+        <textarea rows="12" type="text" id="quote" name=" quote" [(ngModel)]="newQuote.quote" #quote="ngModel"
+          required></textarea>
+        <div [hidden]="quote.valid || quote.pristine" class="alert alert-danger">
+          <p>Field Cannot be empty</p>
+
         </div>
-      </form>
-    </div>
+      </div>
+      <div class="form-group">
+        <label for="name">Author</label>
+        <input type="text" class="form-control" id="name" [(ngModel)]="newQuote.author" name="author" #name='ngModel'
+          required>
+        <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
+          <p>Name is required</p>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="creation">Editor</label>
+        <input class="form-control" id="creation" name="" [(ngModel)]="newQuote.name" #name="ngModel" required>
+        <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
+          <p>Field Cannot be empty</p>
+        </div>
+      </div><br>
+
+      <div class="form-group">
+        <label for="complete">Date</label>
+        <input class="form-control" type='date' id="complete" name="completeDate" [(ngModel)]="newQuote.creationDate"
+          #creationDate="ngModel" required>
+        <div [hidden]="creationDate.value || creationDate.pristine" class="alert alert danger">
+          <p>Date is required</p>
+        </div>
+      </div><br><br>
+      <div class="form-group center">
+        <button type="submit" class="btn btn-lg">Add</button>
+      </div>
+    </form>
   </div>
+
 </div>

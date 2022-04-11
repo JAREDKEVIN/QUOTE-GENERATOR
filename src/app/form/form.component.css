@@ -1,17 +1,53 @@
-.lift {
-  z-index: 2;
-  background-color: rgba(0, 0, 0, 0.65);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+p{
+  color: red;
 }
-
-.formDiv {
-  background-color: rgb(22, 22, 22);
-  box-shadow: 0 0 10px #cac832;
-  width: 500px;
-  min-width: 300px;
-  border-radius: 20px;
-  min-height: 50vh;
-  animation-delay: 0.5s;
+h2{
+  text-align: center;
+}
+.pos{
+  margin-left: 3rem;
+}
+.form-control{
+  background-color: black;
+  border: none;
+}
+input{
+  border: 2px solid #c95827 !important;
+  outline: none !important;
+  width: 100%;
+  border-radius:20px;
+  padding: 20px 0;
+  color: white;
+  background-color: white;
+}
+input[type = "date"]{
+  background-color: white;
+  color:black
+}
+input:focus,input:hover{
+  border:2px solid white !important;
+  color: black;
+  background-color: white;
+}
+textarea{
+  background-color: black;
+  color: white;
+  border: 2px solid #c95827 !important;
+  width: 100%;
+  resize: none;
+}
+label{
+  font-size: 1rem;
+  color: white;
+}
+.btn{
+  background-color: #c95827 !important;
+  color: white !important;
+  padding: 1rem 2rem!important;
+  
+}
+.center{
+ display: flex;
+ justify-content: center;
+ align-content: center;
 }

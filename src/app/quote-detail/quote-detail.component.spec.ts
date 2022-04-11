@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { QuotesGenComponent } from './quotes-gen.component';
+import { QuoteDetailComponent } from './quote-detail.component';
 
-describe('QuotesGenComponent', () => {
-  let component: QuotesGenComponent;
-  let fixture: ComponentFixture<QuotesGenComponent>;
+describe('QuoteDetailComponent', () => {
+  let component: QuoteDetailComponent;
+  let fixture: ComponentFixture<QuoteDetailComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ QuotesGenComponent ]
+      declarations: [ QuoteDetailComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(QuotesGenComponent);
+    fixture = TestBed.createComponent(QuoteDetailComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
