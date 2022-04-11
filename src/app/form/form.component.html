@@ -2,7 +2,7 @@
   <div data-mdb-toggle="animation" animation fadeInDown class="p-2 m-2 formDiv">
     <div class="container">
       <div class="d-flex justify-content-end">
-        <button (click)="close(false)" class="btn btn-outline-danger mt-2">
+        <button type="button" id="form" aria-label="form" (click)="close(false)" class="btn btn-outline-danger mt-2">
           <i class="fa fa-times" aria-hidden="true"></i>
         </button>
       </div>
@@ -28,7 +28,7 @@
           <label for="exampleFormControlTextarea1" class="form-label text-light"
             >Author</label
           >
-          <input
+          <input 
             type="text"
             class="form-control"
             id="exampleFormControlInput1"
