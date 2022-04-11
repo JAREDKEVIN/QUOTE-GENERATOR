@@ -1,28 +1,60 @@
-# QUOTEGENERATOR
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 # QUOTE-GENERATOR
+
+
+![alt text](src/assets/images/screenshot1.png)
+
+
+### Author
+ **[KEVIN KIPKEMOI.](https://github.com/JAREDKEVIN)**
+
+## Description
+
+A website that allows a posting of quotes by users as well as interacting with the posted quotes.
+
+**[Live-Link to site.]()**
+## Features
+
+* Interactive cards that show the posted quotes.
+* A drop down on the cards to reveal details.
+* A like and dislike button to upvote and downvote a qote.
+* A delete button to delete a quote.
+* A form to add a new quote.
+
+## Behaviour Driven Development (BDD)
+|Behaviour 	           |    Input 	                 |       Output          |
+|----------------------------------------------|:-----------------------------------:|-----------------------------:|       
+|Page loads, reveals interactive cards that contain the quotes posted and a form to add their own.                        |   User fills the Author, Quote and Publisher sections of the form.                  |A new interactive card containing the new quote appears.     |                       |
+
+
+## Setup/Installation Requirements
+Here is a run through of how to set up the application:
+* Step 1 : Clone this repository using the git clone link:
+  * **`git clone https://github.com/JAREDKEVIN/QUOTE-GENERATOR.git`**
+* Step 2 : Navigate to the directory:
+  * **`cd Quotes`**
+* Step 3 : Open the directory created with your favorite IDE. If Atom type **`atom .`** if VSCode type **`code .`** . This will lauch the editor with the project setup,
+* Now feel free to hack around the project.
+
+## Known Bugs
+
+- The form displays the validation alerts when subitted.
+- The form displays the validation alerts when subitted. 
+
+## Technologies Used
+
+- Angular CLI version  8.3.4
+- HTML
+- CSS
+- Javascript
+- Bootstrap 5
+
+## Support and contact details
+
+Primary Address: @JAREDKEVIN
+
+### License
+*MIT License* [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](license/MIT)
+
+Copyright (c) 2022 **Kipkemoi Jared Kevin**
+
+
